@@ -12,7 +12,6 @@ python_org_types_links = LinkScraper().get_links(python_org_url, type='types')
 python_org_categories_links = LinkScraper().get_links(python_org_url, type='categories')
 
 #Python.org: All posts
-
 allpost_settings = {
     "FEEDS": {
         "data/python_org/all_posts.csv": {"format": "csv"},
