@@ -1,8 +1,9 @@
 from JobsToScrape.JobsToScrape.spiders.pythonorg_posts_spider import *
 from JobsToScrape.JobsToScrape.spiders.djangojobs_posts_spider import *
+
 from link_scraper import *
+
 from twisted.internet import defer, reactor
-from scrapy.crawler import CrawlerProcess
 from scrapy.crawler import CrawlerRunner
 
 
