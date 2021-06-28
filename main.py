@@ -44,6 +44,7 @@ for type, url in python_org_categories_links.items():
     process_categories_posts = CrawlerRunner(settings=types_categories_settings)
     process_categories_posts.crawl(PythonOrgPostsSpider, start_urls=[url])
 
+
 #Djangojobs: all posts
 allpost_settings = {
     "FEEDS": {
@@ -60,6 +61,7 @@ def crawl():
     yield process_categories_posts.crawl(PythonOrgPostsSpider)
     yield process_djangojobs.crawl(DjangojobsPostsSpider)
     reactor.stop()
+
 
 crawl()
 reactor.run()

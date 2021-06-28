@@ -1,6 +1,7 @@
 import scrapy
 import re
 
+
 class DjangojobsPostsSpider(scrapy.Spider):
     name = "djangojobs_posts"
     start_urls = [
